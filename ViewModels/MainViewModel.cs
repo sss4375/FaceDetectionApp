@@ -115,6 +115,7 @@ namespace FaceDetectionApp.ViewModels
 
                 foreach (var nose in model.Noses)
                 {
+                    if (nose.Width <= 0) continue;
                     using var resized = new Mat();
                     Cv2.Resize(noseMat, resized, new OpenCvSharp.Size(nose.Width, nose.Width));
                     OverlayImage(inputMat, resized, nose.X, nose.Y);
@@ -167,6 +168,7 @@ namespace FaceDetectionApp.ViewModels
 
                 foreach (var nose in model.Noses)
                 {
+                    if (nose.Width <= 0) continue;
                     using var resized = new Mat();
                     Cv2.Resize(noseMat, resized, new OpenCvSharp.Size(nose.Width, nose.Width));
                     OverlayImage(frameCopy, resized, nose.X, nose.Y);
@@ -437,6 +439,7 @@ namespace FaceDetectionApp.ViewModels
 
                             foreach (var nose in model.Noses)
                             {
+                                if (nose.Width <= 0) continue;
                                 using var resized = new Mat();
                                 Cv2.Resize(overlay, resized, new OpenCvSharp.Size(nose.Width, nose.Width));
                                 OverlayImage(mat, resized, nose.X, nose.Y);
