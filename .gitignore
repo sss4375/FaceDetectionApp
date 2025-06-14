@@ -1,0 +1,49 @@
+# .NET / Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+TestResults/
+[Bb]uild/
+[Ll]ogs/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Python virtual env or build artifacts (in case you include dev tools)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# PyInstaller exe
+*.spec
+*.exe
+
+# Mediapipe models copied during packaging
+*.tflite
+*.binarypb
+
+# Local config
+appsettings.*.json
+
+# Images, video results, cached data
+result/
+*.jpg
+*.png
+*.mp4
+*.avi
+
+# Others
+*.log
+*.DS_Store
+Thumbs.db
