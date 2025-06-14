@@ -51,7 +51,7 @@
 
 ## 🔧 Python 서버 직접 빌드하기 (선택 사항)
 
-`nose_detection_server.py`를 직접 `.exe`로 빌드하려면 다음 명령어를 사용하세요:
+`nose_detection_server.py`를 직접 `.exe`로 빌드하려면 다음 명령어를 사용하셔야 합니다(pyinstaller 시 mediapipe 일부 파일 누락)
 
 ```bash
 pyinstaller --onefile ^
