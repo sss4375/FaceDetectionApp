@@ -20,6 +20,9 @@
 
 - **Windows 10 이상**
 - **.NET 8.0 이상**
+.NET 8.0 런타임이 필요합니다.
+다운로드 링크
+https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime
 - **OpenCvSharp4**
 - **Python 3.9 이상**  
   (단, 제공된 `nose_detection_server.exe`를 사용할 경우 Python 미설치 환경에서도 사용 가능)
