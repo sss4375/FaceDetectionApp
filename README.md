@@ -1,6 +1,6 @@
-﻿# FaceDetectionApp - 루돌프 코 합성기 🎅
+﻿# FaceDetectionApp
 
-AI를 활용해 얼굴에서 **코 위치를 자동 검출**하고, 해당 위치에 **루돌프 코를 합성**하는 Windows용 WPF 애플리케이션입니다.  
+얼굴에서 **코 위치를 자동 검출**하고, 해당 위치에 **루돌프 코를 합성**하는 Windows용 WPF 애플리케이션입니다.  
 이미지와 영상, 실시간 웹캠까지 지원하며, Mediapipe 기반의 Python 서버를 활용합니다.
 
 ---
@@ -43,33 +43,3 @@ FaceDetectionApp/
 │ └── NoseDetectorClient.cs # Python 서버 통신 클라이언트
 ├── MainWindow.xaml
 └── MainWindow.xaml.cs
-
-
----
-
-## 🚀 실행 방법
-
-1. **프로그램 실행**
-   - Visual Studio에서 `FaceDetectionApp` 실행
-   - 또는 빌드 후 배포 실행파일 실행
-
-2. **기능 사용**
-   - 이미지/영상 불러오기 → 결과 자동 저장 (`result/`)
-   - 웹캠 실행 → 실시간으로 루돌프 코 합성 표시
-   - 영상 저장 기능은 자동 저장됨 (입력명_rudolph.mp4)
-
-3. **웹캠 인덱스**
-   - 기본값은 `0`번. 다른 장치를 사용할 경우 수동으로 인덱스 수정 필요
-
----
-
-## 🌐 Python 서버 구성 (선택 사항)
-
-직접 Python 서버를 실행하고 싶다면:
-
-```bash
-# 가상환경 추천
-pip install flask mediapipe opencv-python
-
-python nose_detection_server.py
-
