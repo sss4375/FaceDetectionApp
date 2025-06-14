@@ -60,7 +60,8 @@ pyinstaller --onefile ^
 --add-data "C:\Users\사용자명\venv\Lib\site-packages\mediapipe\modules\face_detection\face_detection_short_range.tflite;mediapipe/modules/face_detection" ^
 nose_detection_server.py
 ```
-✅ 최소 requirements.txt
+✅ 최소 requirements
+
 flask==3.1.1
 opencv-python==4.11.0.86
 mediapipe==0.10.21
